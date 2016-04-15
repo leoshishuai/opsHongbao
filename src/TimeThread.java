@@ -2,7 +2,6 @@
 public class TimeThread extends Thread {
     private MyLabelTimer lab;
     private MyLabelBonus labBonus;
-
     public TimeThread(MyLabelTimer lab, MyLabelBonus labBonus) {
         super();
         this.lab = lab;
@@ -15,7 +14,7 @@ public class TimeThread extends Thread {
 
         while (true) {
             try {
-                Thread.sleep(10);
+                Thread.sleep(9);
             } catch (InterruptedException e) {
 
                 e.printStackTrace();

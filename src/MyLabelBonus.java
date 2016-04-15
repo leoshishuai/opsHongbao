@@ -67,7 +67,7 @@ public class MyLabelBonus extends JLabel {
         this.yuan = 0;
         this.ps = 0;
         this.pc = 0;
-        this.setText("0.000");
+        this.setText("");
     }
 
     /**
@@ -96,6 +96,7 @@ public class MyLabelBonus extends JLabel {
             ps = 0;
         }
 
-        this.setText(yuan + "." + df.format(ps));
+        if (yuan > 0 || ps > 0)
+            this.setText("R MONEY: " + yuan + "." + df.format(ps));
     }
 }
